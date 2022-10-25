@@ -1,0 +1,40 @@
+body {
+    margin: 10px;
+}
+
+p {
+   height: 100px;
+   width: 100px;
+   background-color: red;
+   /* margin: 1px; */
+   border: 1px solid white;
+   
+   color: black;
+   text-align: center;
+   line-height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid green;
+    height: 300px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    border: 1px solid green;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.container2 p:nth-last-of-type(2) {
+    align-self: flex-end;
+}
+
+.container2 p:nth-of-type(5) {
+    align-self: center;
+}
